@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="715.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.shandelortiz.controller.ProductoController">
+   <children>
+      <ImageView fitHeight="53.0" fitWidth="64.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Icono.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="78.0" prefHeight="30.0" prefWidth="156.0" text="Código del Producto" textFill="#4995d3">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="311.0" layoutY="14.0" prefHeight="45.0" prefWidth="95.0" text="Producto" textFill="#4995d3">
+         <font>
+            <Font name="System Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="119.0" prefHeight="30.0" prefWidth="142.0" text="Nombre de Producto" textFill="#4995d3">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNombreProducto" editable="false" layoutX="178.0" layoutY="119.0" prefHeight="30.0" prefWidth="409.0" />
+      <TextField fx:id="txtCodigoProducto" editable="false" layoutX="178.0" layoutY="78.0" prefHeight="30.0" prefWidth="210.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TableView fx:id="tblProducto" layoutX="14.0" layoutY="210.0" onKeyReleased="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="238.0" prefWidth="690.0">
+         <columns>
+            <TableColumn fx:id="colCodigoProducto" prefWidth="130.0" text="Código del Producto" />
+            <TableColumn fx:id="colNombreProducto" minWidth="0.0" prefWidth="434.0" text="Nombre del Producto" />
+            <TableColumn fx:id="colCantidad" maxWidth="441.0" minWidth="0.0" prefWidth="125.0" text="Cantidad" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnEliminar" layoutX="135.0" layoutY="463.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="53.0" prefWidth="116.0" text="Eliminar" />
+      <Button fx:id="btnReporte" layoutX="375.0" layoutY="463.0" mnemonicParsing="false" onAction="#reporte" prefHeight="53.0" prefWidth="116.0" text="Reporte" />
+      <Button fx:id="btnEditar" layoutX="255.0" layoutY="463.0" mnemonicParsing="false" onAction="#editar" prefHeight="53.0" prefWidth="116.0" text="Editar" />
+      <Button fx:id="btnNuevo" layoutX="15.0" layoutY="463.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="53.0" prefWidth="116.0" text="Nuevo" />
+      <Label layoutX="13.0" layoutY="158.0" prefHeight="30.0" prefWidth="80.0" text="Cantidad" textFill="#4995d3">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCantidad" editable="false" layoutX="178.0" layoutY="158.0" prefHeight="30.0" prefWidth="210.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

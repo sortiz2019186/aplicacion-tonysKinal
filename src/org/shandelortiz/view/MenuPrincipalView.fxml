@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.shandelortiz.controller.MenuPrincipalController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Menú%20Tonys%20Kinal.jpg" />
+         </image>
+      </ImageView>
+      <MenuBar layoutY="-1.0" prefHeight="29.0" prefWidth="335.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Modulos">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaEmpresa" text="Empresas" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaTipoEmpleado" text="Tipo de Empleado" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaTipoPlato" text="Tipo de Platos" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaProducto" text="Productos" />
+              <MenuItem mnemonicParsing="false" text="Salir" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Reportes">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Nuevo" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Entidades de Unión">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaProductosHasPlatos" text="ProductosHasPlatos" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaServiciosHasPlatos" text="Servicio has Platos" />
+                  <MenuItem mnemonicParsing="false" text="Servicio has Empleados" />
+               </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Acerca de">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#ventanaProgramador" text="Aplicación" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

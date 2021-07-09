@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="715.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.shandelortiz.controller.EmpresaController">
+   <children>
+      <Label layoutX="305.0" layoutY="14.0" prefHeight="45.0" prefWidth="105.0" text="Empresas" textFill="#4995d3">
+         <font>
+            <Font name="System Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="83.0" prefHeight="30.0" prefWidth="116.0" text="Código Empresa" textFill="#4995d3">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="123.0" prefHeight="30.0" prefWidth="116.0" text="Nombre Empresa" textFill="#4995d3">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="163.0" prefHeight="30.0" prefWidth="127.0" text="Dirección Empresa" textFill="#4995d3">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="203.0" prefHeight="30.0" prefWidth="64.0" text="Teléfono" textFill="#4995d3">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCodigoEmpresa" editable="false" layoutX="149.0" layoutY="82.0" prefHeight="30.0" prefWidth="100.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtTelefonoEmpresa" editable="false" layoutX="149.0" layoutY="203.0" prefHeight="30.0" prefWidth="200.0" />
+      <TextField fx:id="txtNombreEmpresa" editable="false" layoutX="149.0" layoutY="123.0" prefHeight="30.0" prefWidth="250.0" />
+      <TextField fx:id="txtDireccionEmpresa" editable="false" layoutX="149.0" layoutY="163.0" prefHeight="30.0" prefWidth="250.0" />
+      <TableView fx:id="tblEmpresas" layoutX="13.0" layoutY="243.0" onKeyReleased="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="238.0" prefWidth="690.0">
+        <columns>
+          <TableColumn fx:id="colCodigoEmpresa" prefWidth="121.0" text="Código Empresa" />
+          <TableColumn fx:id="colNombreEmpresa" minWidth="0.0" prefWidth="224.0" text="Nombre Empresa" />
+            <TableColumn fx:id="colDireccionEmpresa" prefWidth="228.0" text="Dirección Empresa" />
+            <TableColumn fx:id="colTelefonoEmpresa" prefWidth="116.0" text="Teléfono" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnNuevo" layoutX="22.0" layoutY="502.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="53.0" prefWidth="116.0" text="Nuevo" />
+      <Button fx:id="btnEditar" layoutX="272.0" layoutY="502.0" mnemonicParsing="false" onAction="#editar" prefHeight="53.0" prefWidth="116.0" text="Editar" />
+      <Button fx:id="btnReporte" layoutX="397.0" layoutY="502.0" mnemonicParsing="false" onAction="#reporte" prefHeight="53.0" prefWidth="116.0" text="Reporte" />
+      <Button fx:id="btnEliminar" layoutX="147.0" layoutY="502.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="53.0" prefWidth="116.0" text="Eliminar" />
+      <ImageView fitHeight="53.0" fitWidth="64.0" layoutX="13.0" layoutY="14.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Icono.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="74.0" fitWidth="70.0" layoutX="637.0" layoutY="3.0" onMouseClicked="#ventanaPresupuesto" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Presupuesto.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="65.0" fitWidth="64.0" layoutX="557.0" layoutY="6.0" onMouseClicked="#ventanaServicios" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Servicios.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
